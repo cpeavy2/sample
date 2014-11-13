@@ -17,7 +17,16 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stop" id="57"></block>
+                  <block type="variables_set" id="243" inline="true">
+                    <field name="VAR">item</field>
+                    <next>
+                      <block type="robot_delay" id="113" inline="true">
+                        <next>
+                          <block type="movement_stop" id="57"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
